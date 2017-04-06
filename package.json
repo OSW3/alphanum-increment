@@ -1,6 +1,6 @@
 {
   "name": "alphanum-increment",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Increment and Decrement alpha-numeric string",
   "main": "index.js",
   "scripts": {
