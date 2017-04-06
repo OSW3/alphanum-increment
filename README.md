@@ -8,6 +8,13 @@ A small library that increment or decrement an alpha-numeric string
 
 ## Usage
 
+syntaxe
+
+    increment(String str [, Object options]);
+    decrement(String str [, Object options]);
+
+exemple
+
     const alphanuminc = require('alphanum-increment);
     const increment = alphanuminc.increment;
     const decrement = alphanuminc.decrement;
@@ -19,6 +26,19 @@ A small library that increment or decrement an alpha-numeric string
 
 By default, increment and decrement functions are based on this string :
 abcdefghijklmnopqrstuvwxyz0123456789-
+
+Defaults :
+    {
+        alpha: true,
+        digit: true,
+        dashes: true,
+        specials: false,
+        orderby: "ALPHADIGIT",
+
+        s_alpha: "abcdefghijklmnopqrstuvwxyz",
+        s_digit: "0123456789",
+        s_specials: "",
+    }
 
 ##### alpha
 If true, all alpha chars (of s_alpha parameter) are included in the base string. Default: true
