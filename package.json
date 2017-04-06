@@ -1,0 +1,35 @@
+{
+  "name": "alphanum-increment",
+  "version": "0.0.1",
+  "description": "Increment and Decrement alpha-numeric string",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "engines": {
+    "node": ">=4.2.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OSW3/alphanum-increment.git"
+  },
+  "keywords": [
+    "increment",
+    "decrement",
+    "alpha",
+    "numeric",
+    "digit",
+    "alpha-numeric",
+    "string"
+  ],
+  "author": "Arnaud BODEL <contact@osw3.net> (http://osw3.net)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OSW3/alphanum-increment/issues"
+  },
+  "homepage": "https://github.com/OSW3/alphanum-increment#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}
