@@ -21,6 +21,7 @@ function init(options) {
         s_specials: "",
     }, options);
 
+    c = "";
 
     if (settings.orderby == "DIGITALPHA") {
         if (settings.digit) c+= settings.s_digit;
