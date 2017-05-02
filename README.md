@@ -69,6 +69,10 @@ Default: "0123456789"
 Define the string of specials chars. You must add some specials chars and set the parameter "special" to true if you want to use there's.
 Default: ""
 
+##### preserve
+Use the options that were defined in the previous call to increment/decrement
+Default: false
+
 ## Tests
 
   `npm test`
