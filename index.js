@@ -8,30 +8,32 @@ module.exports = {
 };
 
 function init(options) {
+    if(!options.preserve) {
+        var settings = Object.assign({
+            alpha: true,
+            digit: true,
+            dashes: true,
+            specials: false,
+            orderby: "ALPHADIGIT",
 
-    var settings = Object.assign({
-        alpha: true,
-        digit: true,
-        dashes: true,
-        specials: false,
-        orderby: "ALPHADIGIT",
+            s_alpha: "abcdefghijklmnopqrstuvwxyz",
+            s_digit: "0123456789",
+            s_specials: "",
+        }, options);
 
-        s_alpha: "abcdefghijklmnopqrstuvwxyz",
-        s_digit: "0123456789",
-        s_specials: "",
-    }, options);
+        c = "";
 
+        if (settings.orderby == "DIGITALPHA") {
+            if (settings.digit) c+= settings.s_digit;
+            if (settings.alpha) c+= settings.s_alpha;
+        } else {
+            if (settings.alpha) c+= settings.s_alpha;
+            if (settings.digit) c+= settings.s_digit;
+        }
 
-    if (settings.orderby == "DIGITALPHA") {
-        if (settings.digit) c+= settings.s_digit;
-        if (settings.alpha) c+= settings.s_alpha;
-    } else {
-        if (settings.alpha) c+= settings.s_alpha;
-        if (settings.digit) c+= settings.s_digit;
+        if (settings.dashes)    c+= "-";
+        if (settings.specials)  c+= settings.s_specials;
     }
-
-    if (settings.dashes)    c+= "-";
-    if (settings.specials)  c+= settings.s_specials;
 }
 
 function increment(str, options) {
