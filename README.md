@@ -15,7 +15,7 @@ syntaxe
 
 exemple
 
-    const alphanuminc = require('alphanum-increment);
+    const alphanuminc = require('alphanum-increment');
     const increment = alphanuminc.increment;
     const decrement = alphanuminc.decrement;
 
@@ -27,8 +27,8 @@ exemple
 By default, increment and decrement functions are based on this string :
 abcdefghijklmnopqrstuvwxyz0123456789-
 
-Defaults :
-    {
+    Defaults :
+      {
         alpha: true,
         digit: true,
         dashes: true,
@@ -38,7 +38,7 @@ Defaults :
         s_alpha: "abcdefghijklmnopqrstuvwxyz",
         s_digit: "0123456789",
         s_specials: "",
-    }
+      }
 
 ##### alpha
 If true, all alpha chars (of s_alpha parameter) are included in the base string. Default: true
